@@ -1,6 +1,5 @@
 var timerId, startTime, timerState=0, elapsedTime=0;
 
-
 function timerAction()
 {
     if(timerState==0)   //Timer is at 00:00:00
@@ -41,7 +40,7 @@ function updateTimer()
     s=s%60;
     var h=Math.floor(m/60);     //hours
     m=m%60;
-    document.getElementById('timer').innerHTML=addLeadingZero1(h)+":"+addLeadingZero1(m)+":"+addLeadingZero1(s);
+    document.getElementById('hr-min-sec').innerHTML=addLeadingZero1(h)+":"+addLeadingZero1(m)+":"+addLeadingZero1(s);
     document.getElementById('millis').innerHTML=addLeadingZero2(ms);
     timerId = setTimeout(updateTimer);
 }
@@ -54,7 +53,7 @@ function pauseTimer()
 
 function resetTimer()
 {
-    document.getElementById('timer').innerHTML="00:00:00";
+    document.getElementById('hr-min-sec').innerHTML="00:00:00";
     document.getElementById('millis').innerHTML="000";
     document.getElementById('start-pause-resume').innerHTML="start";
     clearTimeout(timerId);
