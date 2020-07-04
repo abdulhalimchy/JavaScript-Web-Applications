@@ -1,3 +1,115 @@
-#hr-min-sec {
-    font-size: 100px;
+/*
+Designed & Developed by Abdul Halim Chowdhury
+Github: https://github.com/abdulhalimchy/
+Linkedin: https://bd.linkedin.com/in/abdulhalimchy*/
+
+/* :::::::::::::::::::::::::::::INDEX::::::::::::::::::::::::::::::
+1. Body
+2. Header
+3. Timer & Ccntainers
+4. Button 
+*/
+
+
+/* _______________________________________________________________
+:::::::::::::::::::::::::::Body Start::::::::::::::::::::::::::::::
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+
+body {
+    background-color: #0f041d;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+/* ----------------------------/Body End--------------------------------- */
+
+/* _______________________________________________________________
+:::::::::::::::::::::::::::Header Start:::::::::::::::::::::::::::
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: cambria;
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+/* ----------------------------/Header End--------------------------------- */
+
+/* _______________________________________________________________
+:::::::::::::::::::::::::::Timer Start::::::::::::::::::::::::::::
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+.container{
+    margin: 0;
+}
+
+
+.container-timer {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 2vw;
+    background-color: #baccd3; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-45deg,#baccd3, #94b1bd);
+    border-radius: 1vw;
+    box-shadow: 0 0 .8vw #000000;
+}
+
+.timer{
+    text-align: center;
+    color: #0d1431;
+    width: fit-content;
+    height: max-content;
+    background-color: #e27405;
+    border-radius: .5vw;
+    box-shadow: inset 0 0 .8vw #000000;
+    user-select: none;  /* make text unselectable */
+}
+
+#hr-min-sec {
+    font-size: 10vw;
+    padding-top: .1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+}
+
+#millis {
+    font-size: 4vw;
+    padding-right: 2vw;
+}
+
+#hr-min-sec, #millis {
+    font-family:  Verdana, Tahoma, sans-serif;
+}
+/* ----------------------------/Timer End--------------------------------- */
+
+/* _______________________________________________________________
+:::::::::::::::::::::::::::Button Start:::::::::::::::::::::::::::
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+.actionButton {
+    margin-top: 1vw;
+    text-align: center;
+}
+
+button {
+    background-color: #d46e07;
+    border: none;
+    border-radius: .1;
+    color:  black;
+    width: 16vw;
+    height: 5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: 600;
+    padding: .2vw;
+    margin: 1vw;
+  }
+
+button:hover {
+    background-color: #e78b2e;
+}
+/* -------------------------------/Button End------------------------- */

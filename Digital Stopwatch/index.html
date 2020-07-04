@@ -7,11 +7,18 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Digital Stopwatch</h1>
-    <div class="timer"><span id="hr-min-sec">00:00:00</span><span id="millis">000</span></div>
-    <button id="start-pause-resume" type="button" onclick="timerAction()">start</button>
-    <button type="button" onclick="resetTimer()">reset</button>
-    
+    <div class="container">
+        <h1>Digital Stopwatch</h1>
+        <div class="container-timer">
+            <div class="timer">
+                <span id="hr-min-sec">00:00:00</span><span id="millis">000</span>
+            </div>
+        </div>
+        <div class="actionButton">
+            <button id="start-pause-resume" type="button" onclick="timerAction()">start</button>
+            <button type="button" onclick="resetTimer()">reset</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
