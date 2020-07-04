@@ -8,6 +8,7 @@ Linkedin: https://bd.linkedin.com/in/abdulhalimchy*/
 2. Header
 3. Timer & Ccntainers
 4. Button 
+5. Media Query
 */
 
 
@@ -113,3 +114,21 @@ button:hover {
     background-color: #e78b2e;
 }
 /* -------------------------------/Button End------------------------- */
+
+@media only screen and (max-width: 480px) {
+    #millis {
+        font-size: 5vw;
+    }
+    #hr-min-sec {
+        font-size: 15vw;
+    }
+
+    button {
+        width: 23vw;
+        height: 9vw;
+        font-size: 5vw;
+        font-weight: 600;
+        padding: .8vw;
+        margin: 1vw;
+      }
+}
