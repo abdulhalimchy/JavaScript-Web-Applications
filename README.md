@@ -2,5 +2,5 @@
 This repository is about mini web applications using JavaScript.
 
 ## Digital Stopwatch
-* Source Code: https://github.com/abdulhalimchy/JavaScript-Web-Applications/tree/master/Digital%20Stopwatch
-* Web page: https://abdulhalimchy.github.io/JavaScript-Web-Applications/Digital%20Stopwatch/
+* watch source code(https://github.com/abdulhalimchy/JavaScript-Web-Applications/tree/master/Digital%20Stopwatch)
+* visit the web page (https://abdulhalimchy.github.io/JavaScript-Web-Applications/Digital%20Stopwatch/)
