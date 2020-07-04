@@ -84,7 +84,7 @@ h1{
 }
 
 #hr-min-sec, #millis {
-    font-family:  Verdana, Tahoma, sans-serif;
+    font-family: Verdana, SimHei, monospace;
 }
 /* ----------------------------/Timer End--------------------------------- */
 
@@ -123,7 +123,10 @@ button:hover {
 ------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
-    
+    .container-timer {
+        padding: 2.5vw;
+    }
+
     h1 {
         font-size: 6vw;
         margin-bottom: 2.5vw;
