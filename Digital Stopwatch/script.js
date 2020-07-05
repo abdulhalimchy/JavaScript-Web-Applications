@@ -77,3 +77,11 @@ function addLeadingZero2(n)
         n="0"+n;  //Add one leading zero, if n<100. Example: 065
     return n;
 }
+
+
+//Spacebar functionality for start, pause, restart
+document.onkeypress= function(e){
+    if((e || window.event).keyCode === 32){
+        timerAction();
+    }
+}

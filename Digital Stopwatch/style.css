@@ -115,6 +115,10 @@ button {
 button:hover {
     background-color: #09a8c0;
 }
+
+button:focus {
+    visibility: hidden;
+}
 /* -------------------------------/Button End------------------------- */
 
 
