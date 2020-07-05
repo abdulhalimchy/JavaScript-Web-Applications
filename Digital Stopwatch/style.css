@@ -32,7 +32,7 @@ body {
 h1{
     text-align: center;
     text-transform: uppercase;
-    color: rgb(196, 246, 255);
+    color: rgb(189, 229, 241);
     font-family: cambria;
     font-size: 4vw;
     margin-bottom: 2vw;
@@ -97,9 +97,9 @@ h1{
 }
 
 button {
-    background-color: #4BDEF5;
+    background-color: #4BDEF5; /*If browser doesn't support gradient*/
+    background-image: linear-gradient(#ebb72a, #f0cc69, #ebb72a);
     border: none;
-    border-radius: .1;
     color:  black;
     width: 16vw;
     height: 5vw;
@@ -110,17 +110,9 @@ button {
     font-weight: 600;
     padding: .2vw;
     margin: 1vw;
-  }
-
-button:hover {
-    background-color: #09a8c0;
 }
 
-button:focus {
-    visibility: hidden;
-}
 /* -------------------------------/Button End------------------------- */
-
 
 /* _____________________________________________________________________________________
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"MEDIA QUERY>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

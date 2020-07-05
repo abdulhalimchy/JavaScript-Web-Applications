@@ -2,6 +2,9 @@ var timerId, startTime, timerState=0, elapsedTime=0;
 
 function timerAction()
 {
+    if (document.activeElement != document.body)
+        document.activeElement.blur();  //clear focus on the button
+
     if(timerState==0)   //Timer is at 00:00:00
     {
         document.getElementById('start-pause-resume').innerHTML="pause";
@@ -26,6 +29,7 @@ function timerAction()
 function startTimer()
 {
     startTime = new Date();     //From when the timer is started.
+    // if (document.activeElement != document.body) document.activeElement.blur();
     updateTimer();
 }
 
@@ -59,6 +63,8 @@ function resetTimer()
     clearTimeout(timerId);
     timerState=0;
     elapsedTime=0;
+    if (document.activeElement != document.body)
+        document.activeElement.blur();          //Clear focus on the button 
 }
 
 
