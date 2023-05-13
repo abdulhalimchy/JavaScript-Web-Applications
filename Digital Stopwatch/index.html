@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="stopwatch, online stopwatch, stopwatch, free online stopwatch, free stopwatch, digital stopwatch, large stopwatch, stopwatch timer, online timer, free online timer" />
+    <meta name="description" content="A Free online stopwatch or timer" />
+    <meta name="author" content="Online Digital Stopwatch" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Stopwatch</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title id="title">Stopwatch</title>
+    <script src="style.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Digital Stopwatch</h1>
+        <h1>Stopwatch</h1>
         <div class="container-timer">
             <div class="timer">
                 <span id="hr-min-sec">00:00:00</span><span id="millis">000</span>
             </div>
         </div>
         <div class="actionButton">
-            <button id="start-pause-resume" type="button" onclick="timerAction()">start</button>
-            <button id="reset-btn" type="button" onclick="resetTimer()">reset</button>
+            <button class="start-pause-resume-btn" id="start-pause-resume" type="button" onclick="timerAction()">start</button>
+            <button class="reset-btn" id="reset-btn" type="button" onclick="resetTimer()">reset</button>
         </div>
     </div>
     <script src="script.js"></script>

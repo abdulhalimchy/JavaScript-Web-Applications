@@ -1,0 +1,167 @@
+/*
+Designed & Developed by Abdul Halim Chowdhury
+Github: https://github.com/abdulhalimchy/
+Linkedin: https://bd.linkedin.com/in/abdulhalimchy*/
+
+/* :::::::::::::::::::::::::::::INDEX::::::::::::::::::::::::::::::
+1. Body
+2. Header
+3. Timer & Ccntainers
+4. Button 
+5. Media Query
+*/
+
+
+/* _______________________________________________________________
+:::::::::::::::::::::::::::Body Start::::::::::::::::::::::::::::::
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+
+body {
+    background-color: #0f041d;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ----------------------------/Body End--------------------------------- */
+
+/* _______________________________________________________________
+:::::::::::::::::::::::::::Header Start:::::::::::::::::::::::::::
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(189, 229, 241);
+    font-family: cambria;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    margin-top: 0;
+}
+/* ----------------------------/Header End--------------------------------- */
+
+/* _______________________________________________________________
+:::::::::::::::::::::::::::Timer Start::::::::::::::::::::::::::::
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+.container{
+    margin: 0;
+}
+
+
+.container-timer {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 2vw;
+    background-color: #baccd3; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#dee8ec, #85a1ad);
+    border-radius: 1vw;
+    box-shadow: 0 0 .8vw #000000;
+}
+
+.timer{
+    text-align: center;
+    padding: 1vw;
+    color: #0d1431;
+    width: fit-content;
+    height: max-content;
+    background-color: #4BDEF5; /*if browser doesn't support gradient color*/
+    background-image: linear-gradient(#50e7c1, #3be0bc);
+    border-radius: .5vw;
+    box-shadow: inset 0 0 .8vw #000000;
+    user-select: none;  /* make text unselectable */
+}
+
+#hr-min-sec {
+    font-size: 10vw;
+    padding-top: .1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+}
+
+#millis {
+    font-size: 4vw;
+    padding-right: 2vw;
+}
+
+@font-face {
+    font-family: Digital7Mono;
+    src: url('./fonts/digital-7-mono.ttf');
+}
+
+#hr-min-sec, #millis {
+    font-family: Digital7Mono, Verdana, SimHei, monospace;
+    /* padding-top: 20px; */
+}
+/* ----------------------------/Timer End--------------------------------- */
+
+/* _______________________________________________________________
+:::::::::::::::::::::::::::Button Start:::::::::::::::::::::::::::
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+.actionButton {
+    margin-top: 1vw;
+    text-align: center;
+}
+
+button {
+    background-color: #1eb94d; /*If browser doesn't support gradient*/
+    background-image: linear-gradient(#8fff44, #43cc20, #1eb94d);
+    border: none;
+    border-radius: 0.5vw;
+    color:  black;
+    width: 16vw;
+    height: 5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: 600;
+    padding: .2vw;
+    margin: 1vw;
+}
+
+.start-pause-resume-btn{
+    background-image: linear-gradient(#5dec65, #3be043, #1eb94d);
+}
+
+.reset-btn{
+    background-image: linear-gradient(#f74c4c, #f05d44, #e73a3a);
+}
+
+button:focus{
+    background: rgb(224, 220, 220);
+}
+
+/* -------------------------------/Button End------------------------- */
+
+/* _____________________________________________________________________________________
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"MEDIA QUERY>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    .container-timer {
+        padding: 2.5vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+        margin-bottom: 2.5vw;
+    }
+    
+    #millis {
+        font-size: 5vw;
+    }
+    #hr-min-sec {
+        font-size: 15vw;
+    }
+
+    button {
+        width: 23vw;
+        height: 9vw;
+        font-size: 5vw;
+        font-weight: 600;
+        padding: .8vw;
+        margin: 1vw;
+      }
+}
+
