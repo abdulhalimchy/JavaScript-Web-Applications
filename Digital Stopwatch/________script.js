@@ -48,7 +48,7 @@ function updateTimer()
     document.getElementById('hr-min-sec').innerHTML=timer_innterHTML
     document.getElementById('millis').innerHTML=addLeadingZero2(ms);
     document.getElementById('title').innerHTML=timer_innterHTML
-    timerId = setTimeout(updateTimer);
+    timerId = setTimeout(updateTimer, 60);
 }
 
 function pauseTimer()
